@@ -1,4 +1,4 @@
-#include "242_Valid_Anagram.h"
+#include "Alogrithm.h"
 
 int main()
 {

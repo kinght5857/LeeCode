@@ -14,9 +14,7 @@
 /*************kinght5857*************/
 
 #include "stdafx.h"
-#include <iostream>
-#include <string>
-using namespace std;
+
 class Solution_242_Valid_Anagram {
 public:
     bool isAnagram(string s, string t) {
@@ -37,6 +35,8 @@ public:
 
 void Test_Solution_242_Valid_Anagram()
 {
+    cout << "running Test_Solution_242_Valid_Anagram\n";
+
     string s1 = "anagram", t1 = "nagaram"; //return true.
     string s2 = "rat", t2 = "car";//return false.
     Solution_242_Valid_Anagram sl;
