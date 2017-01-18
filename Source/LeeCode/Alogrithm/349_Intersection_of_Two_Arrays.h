@@ -25,7 +25,8 @@ public:
         printdetails(nums1);
         printdetails(nums2);
 
-        return vector<int>(2);
+        vector<int>result = { 0 };
+        return result;
     }
 };
 
@@ -36,5 +37,5 @@ void Test_Solution_349_Intersection_of_Two_Arrays()
     vector<int>nums1 = { 1, 2, 2, 1 };
     vector<int>nums2 = { 2, 2 };
     Solution_349_Intersection_of_Two_Arrays sls;
-    sls.intersection(nums1, nums2);
+    printdetails(sls.intersection(nums1, nums2));
 }

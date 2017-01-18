@@ -14,3 +14,13 @@ Source/LeeCode/LeeCode.VC.db
 Source/LeeCode/.vs/LeeCode/v14/.suo
 *.db
 Source/LeeCode/.vs/LeeCode/v14/.suo
+*.lastbuildstate
+Source/LeeCode/Alogrithm/Debug/Alogrithm.tlog/CL.command.1.tlog
+*.tlog
+*.pdb
+Source/LeeCode/LeeCode.VC.VC.opendb
+*.exe
+Source/LeeCode/Debug/Alogrithm.ilk
+*.idb
+Source/LeeCode/Alogrithm/Debug/main.obj
+*.obj
