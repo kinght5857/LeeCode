@@ -11,31 +11,34 @@
 //    Subscribe to see which companies asked this question
 
 #include "stdafx.h"
-void printdetails(vector<int> nums)
+namespace Solution_349
 {
-    for (int i : nums)
-        cout << i << ", ";
-    cout << endl;
-}
-
-class Solution_349_Intersection_of_Two_Arrays {
-public:
-    vector<int> intersection(vector<int>& nums1, vector<int>& nums2) {
-
-        printdetails(nums1);
-        printdetails(nums2);
-
-        vector<int>result = { 0 };
-        return result;
+    void printdetails(vector<int> nums)
+    {
+        for (int i : nums)
+            cout << i << ", ";
+        cout << endl;
     }
-};
 
-void Test_Solution_349_Intersection_of_Two_Arrays()
-{
-    cout << "running Test_Solution_349_Intersection_of_Two_Arrays\n";
+    class Solution_349_Intersection_of_Two_Arrays {
+    public:
+        vector<int> intersection(vector<int>& nums1, vector<int>& nums2) {
 
-    vector<int>nums1 = { 1, 2, 2, 1 };
-    vector<int>nums2 = { 2, 2 };
-    Solution_349_Intersection_of_Two_Arrays sls;
-    printdetails(sls.intersection(nums1, nums2));
+            printdetails(nums1);
+            printdetails(nums2);
+
+            vector<int>result = { 0 };
+            return result;
+        }
+    };
+
+    void Test_Solution_349_Intersection_of_Two_Arrays()
+    {
+        cout << "running Test_Solution_349_Intersection_of_Two_Arrays\n";
+
+        vector<int>nums1 = { 1, 2, 2, 1 };
+        vector<int>nums2 = { 2, 2 };
+        Solution_349_Intersection_of_Two_Arrays sls;
+        printdetails(sls.intersection(nums1, nums2));
+    }
 }

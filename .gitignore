@@ -24,3 +24,5 @@ Source/LeeCode/Debug/Alogrithm.ilk
 *.idb
 Source/LeeCode/Alogrithm/Debug/main.obj
 *.obj
+*.db
+Source/LeeCode/LeeCode.VC.db

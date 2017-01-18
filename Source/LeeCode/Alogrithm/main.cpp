@@ -4,8 +4,8 @@ int main()
 {
     auto t0 = chrono::high_resolution_clock::now();
 
-    //Test_Solution_242_Valid_Anagram();
-    Test_Solution_349_Intersection_of_Two_Arrays();
+    //Anlogrithm_242::Test_Solution_242_Valid_Anagram();
+    Solution_349::Test_Solution_349_Intersection_of_Two_Arrays();
     
     
     auto t = chrono::high_resolution_clock::now();
