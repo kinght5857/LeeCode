@@ -15,6 +15,9 @@
 
 #include "stdafx.h"
 
+#include <algorithm>
+#include <chrono>
+
 //public class Solution {
 //    public boolean isAnagram(String s, String t) {
 //        int[] alphabet = new int[26];
@@ -60,4 +63,18 @@ void Test_Solution_242_Valid_Anagram()
         cout << "same!" << endl;
     else
         cout << "diff" << endl;
+}
+
+void OtherSolution(){
+    string s(10000, ' ');
+    auto t0 = chrono::high_resolution_clock::now();
+    for (int i = 0; i<1000; i++) {
+        for (int j = 0; j<10000; j++)
+            s[j] = 'a' + j & 15;
+        sort(s.begin(), s.end());        //5982ms
+        //sort((char*)s.c_str(), (char*)s.c_str() + s.size());  // 5873ms
+    }
+    auto t = chrono::high_resolution_clock::now();
+    cout << chrono::duration_cast<std::chrono::milliseconds>(t - t0).count() << " ms\n";
+
 }

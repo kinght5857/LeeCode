@@ -12,3 +12,5 @@ Source/LeeCode/LeeCode.VC.db
 *.db
 *.db
 Source/LeeCode/.vs/LeeCode/v14/.suo
+*.db
+Source/LeeCode/.vs/LeeCode/v14/.suo
