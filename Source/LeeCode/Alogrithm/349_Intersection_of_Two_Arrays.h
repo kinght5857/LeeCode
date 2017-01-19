@@ -43,16 +43,12 @@ namespace Solution_349
             //}
 
             //return Result;
-       
-            set<int> numSet;
-            vector<int> Result;
-            for (int i : nums1)
-            { 
-                int temp = i;
-                //if (numSet.end() != numSet.find(i))
-                    numSet.insert(temp);
+            if (nums1.size() == 0 || nums2.size() == 0) return vector<int>(0);
+            //if (nums1.size() == 0 || nums2.size() == 0) return ((nums1.size() == 0)? nums1: nums2);
 
-            }
+            set<int> numSet(nums1.begin(),nums1.end());
+            vector<int> Result;
+
             for (int i : nums2)
             {
                 if (numSet.find(i) != numSet.end() /*&& numSet[i] != 0*/)

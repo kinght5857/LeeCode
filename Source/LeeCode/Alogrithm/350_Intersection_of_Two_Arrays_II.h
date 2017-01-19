@@ -24,8 +24,6 @@ namespace Solution_350
     public:
         vector<int> intersection(vector<int>& nums1, vector<int>& nums2)
         {
-            //printdetails(nums1);
-            //printdetails(nums2);
             map<int, int> numMap;
             vector<int> Result;
             for (int i : nums1)
