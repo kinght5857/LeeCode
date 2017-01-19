@@ -24,22 +24,40 @@ namespace Solution_349
     public:
         vector<int> intersection(vector<int>& nums1, vector<int>& nums2) 
         {
-            //printdetails(nums1);
-            //printdetails(nums2);
-            map<int, int> numMap;
+            //map<int, int> numMap;
+            //vector<int> Result;
+            //for (int i : nums1)
+            //{
+            //    int temp = i;
+            //    if (numMap.end() == numMap.find(i))
+            //        numMap.insert(std::pair<int, int>(temp, 1));
+
+            //}
+            //for (int i : nums2)
+            //{
+            //    if (numMap.find(i) != numMap.end() && numMap[i] != 0)
+            //    {
+            //        numMap[i] = 0;
+            //        Result.push_back(i);
+            //    }
+            //}
+
+            //return Result;
+       
+            set<int> numSet;
             vector<int> Result;
             for (int i : nums1)
             { 
                 int temp = i;
-                if (numMap.end() == numMap.find(i))
-                    numMap.insert(std::pair<int, int>(temp, 1));
+                //if (numSet.end() != numSet.find(i))
+                    numSet.insert(temp);
 
             }
             for (int i : nums2)
             {
-                if (numMap.find(i) != numMap.end() && numMap[i] != 0)
+                if (numSet.find(i) != numSet.end() /*&& numSet[i] != 0*/)
                 {
-                    numMap[i] = 0;
+                    numSet.erase(i);
                     Result.push_back(i);
                 }
             }
