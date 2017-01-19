@@ -51,11 +51,8 @@ namespace Solution_349
 
             for (int i : nums2)
             {
-                if (numSet.find(i) != numSet.end() /*&& numSet[i] != 0*/)
-                {
-                    numSet.erase(i);
+                if (numSet.erase(i))
                     Result.push_back(i);
-                }
             }
 
             return Result;
