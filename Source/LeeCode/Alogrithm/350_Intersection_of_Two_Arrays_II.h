@@ -24,22 +24,31 @@ namespace Solution_350
     public:
         vector<int> intersection(vector<int>& nums1, vector<int>& nums2)
         {
-            map<int, int> numMap;
+            unordered_map<int, int> numMap;
             vector<int> Result;
+            if (nums1.size() > nums2.size())
+            {
+                //vector<int>& temp = nums1;
+                //nums1 = nums2;
+                //nums2 = temp;
+                swap(nums1, nums2);
+            }
+
             for (int i : nums1)
             {
-                int temp = i;
-                if (numMap.end() == numMap.find(i))
-                    numMap.insert(std::pair<int, int>(temp, 1));
-                else
-                    numMap[temp]++;
+                //int temp = i;
+                //if (numMap.end() == numMap.find(i))
+                //    numMap.insert(std::pair<int, int>(temp, 1));
+                //else
+                    numMap[i]++;
 
             }
             for (int i : nums2)
             {
-                if (numMap.find(i) != numMap.end() && numMap[i] != 0)
+                //if (numMap.find(i) != numMap.end() && numMap[i] != 0)
+                if (numMap.find(i) != numMap.end() && numMap[i]-- > 0)
                 {
-                    numMap[i]--;
+                    //numMap[i]--;
                     Result.push_back(i);
                 }
             }
@@ -53,7 +62,7 @@ namespace Solution_350
         cout << "running Test_Solution_349_Intersection_of_Two_Arrays\n";
 
         vector<int>nums1 = { 1, 2, 2, 3, 1 };
-        vector<int>nums2 = { 2, 2, 3, 5 };
+        vector<int>nums2 = { 10, 2, 3, 5 };
         Solution_350_Intersection_of_Two_Arrays_II sls;
         printdetails(sls.intersection(nums1, nums2));
     }
