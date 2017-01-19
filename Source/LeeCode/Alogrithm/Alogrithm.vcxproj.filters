@@ -14,6 +14,9 @@
     <ClInclude Include="349_Intersection_of_Two_Arrays.h">
       <Filter>Alogrithm</Filter>
     </ClInclude>
+    <ClInclude Include="350_Intersection_of_Two_Arrays_II.h">
+      <Filter>Alogrithm</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Alogrithm">
