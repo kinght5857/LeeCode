@@ -22,13 +22,29 @@ namespace Solution_349
 
     class Solution_349_Intersection_of_Two_Arrays {
     public:
-        vector<int> intersection(vector<int>& nums1, vector<int>& nums2) {
+        vector<int> intersection(vector<int>& nums1, vector<int>& nums2) 
+        {
+            //printdetails(nums1);
+            //printdetails(nums2);
+            map<int, int> numMap;
+            vector<int> Result;
+            for (int i : nums1)
+            { 
+                int temp = i;
+                if (numMap.end() == numMap.find(i))
+                    numMap.insert(std::pair<int, int>(temp, 1));
 
-            printdetails(nums1);
-            printdetails(nums2);
+            }
+            for (int i : nums2)
+            {
+                if (numMap.find(i) != numMap.end() && numMap[i] != 0)
+                {
+                    numMap[i] = 0;
+                    Result.push_back(i);
+                }
+            }
 
-            vector<int>result = { 0 };
-            return result;
+            return Result;
         }
     };
 
@@ -36,8 +52,8 @@ namespace Solution_349
     {
         cout << "running Test_Solution_349_Intersection_of_Two_Arrays\n";
 
-        vector<int>nums1 = { 1, 2, 2, 1 };
-        vector<int>nums2 = { 2, 2 };
+        vector<int>nums1 = { 1, 2, 2, 3, 1 };
+        vector<int>nums2 = { 2, 2, 3 };
         Solution_349_Intersection_of_Two_Arrays sls;
         printdetails(sls.intersection(nums1, nums2));
     }
