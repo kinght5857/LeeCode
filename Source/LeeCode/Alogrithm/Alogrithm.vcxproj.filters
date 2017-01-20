@@ -20,6 +20,9 @@
     <ClInclude Include="274_h-index.h">
       <Filter>Alogrithm</Filter>
     </ClInclude>
+    <ClInclude Include="179_LargestNumber.h">
+      <Filter>Alogrithm</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Alogrithm">
