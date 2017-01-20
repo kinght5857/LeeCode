@@ -6,7 +6,8 @@ int main()
 
     //Anlogrithm_242::Test_Solution_242_Valid_Anagram();
     //Solution_349::Test_Solution_349_Intersection_of_Two_Arrays();
-    Solution_350::Test_Solution_350_Intersection_of_Two_Arrays_II();
+    //Solution_350::Test_Solution_350_Intersection_of_Two_Arrays_II();
+    Anlogrithm_274::Test_Anlogrithm_274();
     
     
     auto t = chrono::high_resolution_clock::now();
