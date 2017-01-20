@@ -6,6 +6,12 @@
 
 namespace LagestNumber_179
 {
+    //Given a list of non negative integers, arrange them such that they form the largest number.
+
+    //    For example, given[3, 30, 34, 5, 9], the largest formed number is 9534330.
+
+    //    Note: The result may be very large, so you need to return a string instead of an integer.
+
     class Solution {
     public:
         string largestNumber(vector<int>& nums) {
@@ -35,25 +41,27 @@ namespace LagestNumber_179
             //    }
             //});
             
-            
             //if (0 == nums.size()) return string("");
             //if (1 == nums.size()) return string("");
+            
+            stringstream ss;// , ss1, ss2;
 
-            sort(nums.begin(), nums.end(), [](int l, int r) {
-                stringstream ss1,ss2;
-                ss1 << l << r;
-                ss2 << r << l;
-                return ss1.str() > ss2.str();
+            if (nums.size() == 0) return std::to_string(nums[0]);
 
+            sort(nums.begin(), nums.end(), [&](int l, int r) {
+                //ss1.str("");
+                //ss2.str("");
+                //ss1 << l << r;
+                //ss2 << r << l;
+                //return ss1.str() > ss2.str();
+                return  (to_string(l) + to_string(r)) > (to_string(r) + to_string(l));
             });
 
-            stringstream ss;
+            if (nums[0] == 0) return std::to_string(0);
+
             for (int i : nums)
                 ss << i;
-            string   temp = ss.str();
-
-            if (temp[0] == '0') return string("0");
-
+            
             return ss.str();
 
         }
