@@ -146,6 +146,7 @@
     <ClInclude Include="179_LargestNumber.h" />
     <ClInclude Include="242_Valid_Anagram.h" />
     <ClInclude Include="274_h-index.h" />
+    <ClInclude Include="324_Wiggle_Sort_II.h" />
     <ClInclude Include="349_Intersection_of_Two_Arrays.h" />
     <ClInclude Include="350_Intersection_of_Two_Arrays_II.h" />
     <ClInclude Include="Alogrithm.h" />

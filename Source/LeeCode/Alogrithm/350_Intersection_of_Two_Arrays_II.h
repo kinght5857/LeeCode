@@ -11,6 +11,7 @@
 //    Subscribe to see which companies asked this question
 
 #include "stdafx.h"
+
 namespace Solution_350
 {
     void printdetails(vector<int> nums)

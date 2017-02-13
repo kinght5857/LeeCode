@@ -7,26 +7,32 @@
   <ItemGroup>
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
-    <ClInclude Include="242_Valid_Anagram.h">
-      <Filter>Alogrithm</Filter>
-    </ClInclude>
     <ClInclude Include="Alogrithm.h" />
-    <ClInclude Include="349_Intersection_of_Two_Arrays.h">
-      <Filter>Alogrithm</Filter>
-    </ClInclude>
     <ClInclude Include="350_Intersection_of_Two_Arrays_II.h">
-      <Filter>Alogrithm</Filter>
-    </ClInclude>
-    <ClInclude Include="274_h-index.h">
-      <Filter>Alogrithm</Filter>
+      <Filter>Alogrithm\Sort</Filter>
     </ClInclude>
     <ClInclude Include="179_LargestNumber.h">
-      <Filter>Alogrithm</Filter>
+      <Filter>Alogrithm\Sort</Filter>
+    </ClInclude>
+    <ClInclude Include="242_Valid_Anagram.h">
+      <Filter>Alogrithm\Sort</Filter>
+    </ClInclude>
+    <ClInclude Include="274_h-index.h">
+      <Filter>Alogrithm\Sort</Filter>
+    </ClInclude>
+    <ClInclude Include="324_Wiggle_Sort_II.h">
+      <Filter>Alogrithm\Sort</Filter>
+    </ClInclude>
+    <ClInclude Include="349_Intersection_of_Two_Arrays.h">
+      <Filter>Alogrithm\Sort</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Alogrithm">
       <UniqueIdentifier>{fe54e574-4e6c-48aa-8758-4724e6f5a990}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Alogrithm\Sort">
+      <UniqueIdentifier>{71aa2729-1a0f-44c6-8e06-e15af49cda12}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

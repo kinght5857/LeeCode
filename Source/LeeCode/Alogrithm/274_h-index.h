@@ -11,8 +11,6 @@
 
 #include "stdafx.h"
 
-#include <algorithm>
-
 namespace Anlogrithm_274
 {
     class Solution {

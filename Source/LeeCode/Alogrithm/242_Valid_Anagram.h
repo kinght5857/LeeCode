@@ -15,8 +15,6 @@
 
 #include "stdafx.h"
 
-#include <algorithm>
-
 //public class Solution {
 //    public boolean isAnagram(String s, String t) {
 //        int[] alphabet = new int[26];
